@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		997B62CA1C58FD9700F60B8C /* PostgreSQLSwifInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997B62C91C58FD9700F60B8C /* PostgreSQLSwifInterface.swift */; };
+		997B62CC1C58FDAD00F60B8C /* PostgreSQLSwifInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997B62CB1C58FDAD00F60B8C /* PostgreSQLSwifInterfaceTests.swift */; };
 		F87A61781BD57FED0062FF2B /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87A61771BD57FED0062FF2B /* PerfectLib.framework */; };
 		F8F28A791BD57D8A00367249 /* PostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F28A6E1BD57D8900367249 /* PostgreSQL.framework */; };
 		F8F28A7E1BD57D8A00367249 /* PostgreSQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F28A7D1BD57D8A00367249 /* PostgreSQLTests.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		997B62C91C58FD9700F60B8C /* PostgreSQLSwifInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostgreSQLSwifInterface.swift; sourceTree = "<group>"; };
+		997B62CB1C58FDAD00F60B8C /* PostgreSQLSwifInterfaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostgreSQLSwifInterfaceTests.swift; sourceTree = "<group>"; };
 		F87A61771BD57FED0062FF2B /* PerfectLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PerfectLib.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Perfect-bmsnkpplajpulvabysklkvgjzgsj/Build/Products/Debug/PerfectLib.framework"; sourceTree = "<group>"; };
 		F8F28A6E1BD57D8900367249 /* PostgreSQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PostgreSQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F28A711BD57D8900367249 /* PostgreSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostgreSQL.h; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F28A7D1BD57D8A00367249 /* PostgreSQLTests.swift */,
+				997B62CB1C58FDAD00F60B8C /* PostgreSQLSwifInterfaceTests.swift */,
 				F8F28A7F1BD57D8A00367249 /* Info.plist */,
 			);
 			path = PostgreSQLTests;
@@ -112,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F28A891BD57E2200367249 /* PostgreSQL.swift */,
+				997B62C91C58FD9700F60B8C /* PostgreSQLSwifInterface.swift */,
 				F8F28A8B1BD57E4000367249 /* PGLassoObject.swift */,
 			);
 			name = Source;
@@ -237,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997B62CA1C58FD9700F60B8C /* PostgreSQLSwifInterface.swift in Sources */,
 				F8F28A8A1BD57E2200367249 /* PostgreSQL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997B62CC1C58FDAD00F60B8C /* PostgreSQLSwifInterfaceTests.swift in Sources */,
 				F8F28A7E1BD57D8A00367249 /* PostgreSQLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
