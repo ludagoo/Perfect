@@ -104,19 +104,18 @@ class PostgreSQLSwifInterfaceTests: XCTestCase {
 		XCTAssertEqual("", result.errorMessage())
 		result = p.insert([("test3", "3testing1")], intoTable: "test")
 		XCTAssertEqual("", result.errorMessage())
+		result = p.insert([("test", "3testing1")], intoTable: "test")
+		XCTAssertEqual("", result.errorMessage())
 		
 		result = p.updateTable("test", whereColumn: "test", isNamed: "test", keysAndValues: [("test","5test")])
 		XCTAssertEqual("", result.errorMessage())
 
-		
-		//
-				var searchResult =  p.searchColumn("test", fromTable: "test", forResultsThatContain: "5")
-				XCTAssertEqual("5test", searchResult?[0])
+		var searchResult =  p.searchColumn("test", fromTable: "test", forResultsThatContain: "5")
+		XCTAssertEqual("5test", searchResult?[0])
 		
 		searchResult = p.searchColumn("test", fromTable: "test", forResultThatBiginsWith: "5")
-		XCTAssert(searchResult?.count == 1)
+		XCTAssertEqual(1, searchResult?.count)
 		
-		//XCTAssert(searchResult?.count == 4)
 	}
 }
 

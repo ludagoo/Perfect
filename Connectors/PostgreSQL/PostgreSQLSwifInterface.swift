@@ -75,7 +75,7 @@ extension PGConnection {
 		return resultArray
 	}
 	
-	public func updateTable(table:String, whereColumn column:String, isNamed:String, keysAndValues:[(String,String)]) -> PGResult {
+	public func updateTable(table:String, whereColumn column:String, isNamed name:String, keysAndValues:[(String,String)]) -> PGResult {
 		var statment = "UPDATE weather SET temp_hi = temp_hi - 2,  temp_lo = temp_lo - 2 WHERE date > '1994-11-28';"
 		
 		statment = "UPDATE " + table + " SET "
@@ -84,7 +84,7 @@ extension PGConnection {
 			statment = statment + key + " = '" + value + "', "
 		}
 		
-		statment = statment.substringToIndex(statment.endIndex.predecessor().predecessor()) + "WHERE " + column + " = " + column + ";"
+		statment = statment.substringToIndex(statment.endIndex.predecessor().predecessor()) + " WHERE " + column + " = '" + name + "';"
 		
 		return exec(statment)
 	}
